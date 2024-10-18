@@ -79,7 +79,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Leila Ghaffari}} \\ Curriculum Vitae \\ March 2023 & GitHub : \href{https://github.com/LeilaGhaffari}{LeilaGhaffari} \\
+  \textbf{{\Large Leila Ghaffari}} \\ Curriculum Vitae \\ October 2024 & GitHub : \href{https://github.com/LeilaGhaffari}{LeilaGhaffari} \\
 
    & ORCID : \href{https://orcid.org/0000-0002-0965-214X}{https://orcid.org/0000-0002-0965-214X} \\
    & LinkedIn : \href{https://www.linkedin.com/in/leila-ghaffari-2432a019a/}{https://www.linkedin.com/in/leila-ghaffari-2432a019a} \\
@@ -88,6 +88,9 @@
    
 \end{tabular*}
 
+%-----------Interests-----------------
+\section{Summary}
+Interdisciplinary researcher specializing in scientific computing, high-performance computing, and software development. Experienced with automatic differentiation tools, finite element methods, and numerical linear algebra. Demonstrated ability to collaborate across disciplines and mentor students in research programs. Passionate about advancing automation and reliability in computational mechanics through innovative software solutions and performance optimization techniques.
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -112,20 +115,30 @@
       {University of Colorado Boulder}{Boulder, CO}
       {Graduate Research Assistant}{Apr. 2020 - Present}
       \vspace{.1 mm}
+
+      \textbf{Faculty advisor}: \href{https://jedbrown.org/}{Jed Brown}
+      
+      \textbf{Dissertation title}: Automation \& Reliability in Computational Solid Mechanics
       \begin{itemize}
-          \item Contributing to fluids with \href{https://github.com/CEED/libCEED}{libCEED} and \href{https://www.mcs.anl.gov/petsc/}{PETSc}.
-          \item Contributing to structures with \href{https://gitlab.com/micromorph/ratel}{Ratel} and \href{https://github.com/EnzymeAD/Enzyme}{Enzyme-AD}, a high-performance automatic differentiation tool, for developing new material models.
-          \item Investigating generalizations of blocked Krylov methods for Kronecker-type systems.
-          \item Computational plasticity
+        \item Contributing to \href{https://gitlab.com/micromorph/ratel}{Ratel}, a new solid mechanics software package built upon \href{https://github.com/CEED/libCEED}{libCEED} and \href{https://www.mcs.anl.gov/petsc/}{PETSc}.
+        \item Studying the performance and applicability of various AD tools in computational solid mechanics.
+        \item Exploring the null spaces in singular linear systems with iterative methods.
+        \item Contributed to libCEED.
       \end{itemize}
 
+    \resumeSubheading
+      {Amazon Web Services (AWS)}{San Francisco, CA}
+      {Research Science Intern}{Jun. 2024 - Aug. 2024}
+      \vspace{.1 mm}
+      
+       Design \& Simulation Team, Center for Quantum Computing. Contributed to \href{https://github.com/awslabs/palace}{awslabs/palace}, an open source 3D Finite Element Solver for Computational Electromagnetics.
+       
     \resumeSubheading
       {The National Center for Atmospheric Research (NCAR)}{Boulder, CO}
       {SIParCS Intern}{May 2021 - Jul. 2021}
       \vspace{.1 mm}
       
-      
-       Ported the Shallow Water Model mini-app with DPC++, ran it on an Intel Xeon Skylake CPU and an Intel-Xe GPU with different problem sizes, and studied the performance of the ported code (\href{https://www2.cisl.ucar.edu/siparcs-2021-ghaffari}{Performance Portability of Shallow Water Model with DPC++}).
+       Ported the Shallow Water Model mini-app with DPC++ (SYCL), and studied the performance of the ported code on several Intel CPU and GPU devices (\href{https://www2.cisl.ucar.edu/siparcs-2021-ghaffari}{Performance Portability of Shallow Water Model with DPC++}).
       
     \resumeSubheading
       {University of Colorado Boulder}{Boulder, CO}
@@ -133,30 +146,6 @@
       \vspace{.1 mm}
       
       Expanded a Navier-Stokes solver mini-app for compressible gas dynamics in a three-dimensional geometry in libCEED.
-
-
-    \resumeSubheading
-      {Universite d’Avignon et des Pays du Vaucluse}{Avignon, France}
-      {Intern}{Jan. 2017 - Jun. 2017}
-      \vspace{.1 mm}
-      
-      Developed environmental-friendly chemical processes.
-
-      
-    \resumeSubheading
-      {Sharif University of Technology}{Tehran, Iran}
-      {Graduate Research Assistant}{Feb. 2014 - Jan. 2016}
-      \vspace{.1 mm}
-      
-      Designed a bioreactor for Sulfate reducing processes and studied the experimental consistency of the observations with theory.
- 
-
-    \resumeSubheading
-      {Tehran Oil Refinery Company}{Tehran, Iran}
-      {Intern}{Jun. 2009 - Sep. 2009}
-      \vspace{.1 mm}
-      
-      Studied the Health, Safety and Environment (HSE) management of the Tehran Oil Refinery Company.
       
 
   \resumeSubHeadingListEnd
@@ -164,9 +153,9 @@
 %--------TECHNICAL SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
-   \item \textbf{Programming Languages}{: C, Python, Julia, MATLAB, Scala, R}
+   \item \textbf{Programming Languages}{: C/C++, Python, Julia, MATLAB, Scala, R}
    
-   \item \textbf{Software and Tools}{: Git, Make, Snakemake, Travis CI, Linux Bash, Valgrind, GNU Debugger, \LaTeX, Abaqus, AutoCAD, SOLIDWORKS, ChemCAD, Aspen HYSYS, Enzyme-AD, Zygote}
+   \item \textbf{Software and Tools}{: Git, Make, Snakemake, Travis CI, Linux Bash, Valgrind, GNU Debugger, \LaTeX, Abaqus, AutoCAD, SOLIDWORKS, ChemCAD, Aspen HYSYS, Enzyme-AD, ADOL-C, Zygote}
    
    \item \textbf{High-Performance Computing}{: Intel Advisor, DPC++, MPI, MPI I/O, OpenMP, Slurm}
    
@@ -177,11 +166,75 @@
 
 \resumeSubHeadingListStart
 
+\item Rezgar Shakeri, \textbf{Leila Ghaffari}, Jeremy L. Thompson, and Jed Brown. 2024. Stable numerics for finite-strain elasticity. \href{https://onlinelibrary.wiley.com/doi/10.1002/nme.7563?af=R}{doi:10.1002/nme.7563}
+
 \item Jed Brown, Valeria Barra, Natalie Beams, \textbf{Leila Ghaffari}, Matthew Knepley, William Moses, Rezgar Shakeri, Karen Stengel, Jeremy L. Thompson, and Junchao Zhang. 2022. \emph{Performance Portable Solid Mechanics via Matrix-Free p-Multigrid.} \href{https://doi.org/10.48550/arXiv.2204.01722}{doi:10.48550/arXiv.2204.01722}
 
 \item Jed Brown, Ahmad Abdelfattah, Valeria Barra , Natalie Beams, Jean-Sylvain Camier, Veselin Dobrev, Yohann Dudouit, \textbf{Leila Ghaffari}, Tzanio Kolev, David Medina, Will Pazner, Thilina Rathnayake, Jeremy Thompson, Stan Tomov, \emph{libCEED: Fast algebra for high-order element-based discretizations}, Journal of Open Source Software, 6(63), 2945,  \href{https://doi.org/10.21105/joss.02945}{doi:10.21105/joss.02945}
 
-\item Boublenza I, Lazouni HA, \textbf{Ghaffari L}, Ruiz K, Fabiano-Tixier AS, Chemat F, \emph{Influence of roasting on sensory, antioxidant, aromas, and physicochemical properties of carob pod powder (Ceratonia siliqua L.)}, J Food Qual 2017:1-10. \href{https://doi.org/10.1155/2017/4193672}{doi:10.1155/2017/4193672}
+\resumeSubHeadingListEnd
+
+%-----------Honors and Awards-----------------
+\section{Honors and Awards}
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Student Travel Award (\$950)}{}
+  {SIAM}{Jan. 2023}
+  \vspace{.1 mm}
+  
+  Awarded from the Society for Industrial and Applied Mathematics (SIAM) to attend the 2023 SIAM Conference on Computational Science and Engineering (CSE23).
+
+  \resumeSubheading
+  {Clive Baillie Memorial Fellowship (\$1200)}{}
+  {Computer Science Department at CU Boulder}{Oct. 2022}
+  \vspace{.1 mm}
+  
+  Awarded from the Department of Computer Science at CU Boulder to attend the 2023 SIAM Conference on Computational Science and Engineering (CSE23).
+
+  \resumeSubheading
+  {Clive Baillie Memorial Fellowship (\$1000)}{}
+  {Computer Science Department at CU Boulder}{Oct. 2020}
+  \vspace{.1 mm}
+  
+  Awarded from the Department of Computer Science at CU Boulder to attend the 2021 SIAM Conference on Computational Science and Engineering (CSE21).
+\resumeSubHeadingListEnd
+
+%-----------Teaching Experience-----------------
+\section{Teaching Experience}
+
+\resumeSubHeadingListStart
+
+     \resumeSubheading
+      {University of Colorado Boulder}{Boulder, CO}
+      {Graduate Teaching Assistant}{Aug. 2023 - Dec. 2023}
+      \vspace{.1 mm}
+
+      \textbf{Numerical Computation} (CSCI 3656): Designed computational assignments in Julia using nbgrader, held office hours, and graded assignments.
+      
+  \resumeSubheading
+    {University of Tehran}{Tehran, Iran}
+    {Process Design with HYSYS}{Jan. 2011 - May 2011}
+    \vspace{.1 mm}
+    
+    Teaching assistant for \textbf{Computer Aided Process Design and Simulation with Aspen HYSYS}, a chemical process simulator used to mathematically model chemical processes, at the Chemical Engineering Department.
+
+\resumeSubHeadingListEnd
+
+%-----------Mentoring Experience-----------------
+\section{Mentoring Experience}
+
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Summer Program for Undergraduate Research (SPUR)}{Boulder, CO}
+    {University of Colorado Boulder}{}
+
+    \begin{itemize}
+        \item Clil Phillips (Summer 2023)
+        \item Kellen Davis Martin (Summer 2022)
+        \item David Reeder (Summer 2021)
+    \end{itemize}
 
 \resumeSubHeadingListEnd
 
@@ -200,7 +253,7 @@
 \resumeSubHeadingListEnd
 
 %-----------INVITED TALKS-------------
-\section{Invited Talks}
+\section{Talks}
 
 \resumeSubHeadingListStart
 
@@ -228,6 +281,15 @@
   \vspace{.1 mm}
   
   \emph{Forward-Mode Enzyme in Developing Constitutive Models with Ratel}
+  
+  \textbf{Leila Ghaffari}, William Moses, Jeremy L Thompson, Karen Stengel, Rezgar Shakeri, and Jed Brown
+
+  \resumeSubheading
+  {Enzyme Conference 2023}{Boulder, CO}
+  {EnzymeCon 2023}{Feb. 2023}
+  \vspace{.1 mm}
+  
+  \emph{Automatic Differentiation in Solid Mechanics: Interpretation and Composition}
   
   \textbf{Leila Ghaffari}, William Moses, Jeremy L Thompson, Karen Stengel, Rezgar Shakeri, and Jed Brown
   
@@ -266,21 +328,6 @@
   \emph{Advances in LibCEED with Applications to Fluid and Solid Mechanics}
   
   \textbf{Leila Ghaffari}, Jeremy Thompson, Valeria Barra, and Jed Brown
-  
-\resumeSubHeadingListEnd
-
-%-----------CONTRIBUTED TALKS-------------
-\section{Contributed Talks}
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {Enzyme Conference 2023}{Boulder, CO}
-  {EnzymeCon 2023}{Feb. 2023}
-  \vspace{.1 mm}
-  
-  \emph{Automatic Differentiation in Solid Mechanics: Interpretation and Composition}
-  
-  \textbf{Leila Ghaffari}, William Moses, Jeremy L Thompson, Karen Stengel, Rezgar Shakeri, and Jed Brown
   
 \resumeSubHeadingListEnd
 
@@ -335,66 +382,6 @@
   Valeria Barra, Jed Brown, Yohann Dudouit, \textbf{Leila Ghaffari}, and Jeremy Thompson
   
   
-\resumeSubHeadingListEnd
-
-%-----------Honors and Awards-----------------
-\section{Honors and Awards}
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-  {Student Travel Award (\$950)}{}
-  {SIAM}{Jan. 2023}
-  \vspace{.1 mm}
-  
-  Awarded from the Society for Industrial and Applied Mathematics (SIAM) to attend the 2023 SIAM Conference on Computational Science and Engineering (CSE23).
-
-  \resumeSubheading
-  {Clive Baillie Memorial Fellowship (\$1200)}{}
-  {Computer Science Department at CU Boulder}{Oct. 2022}
-  \vspace{.1 mm}
-  
-  Awarded from the Department of Computer Science at CU Boulder to attend the 2023 SIAM Conference on Computational Science and Engineering (CSE23).
-
-  \resumeSubheading
-  {Clive Baillie Memorial Fellowship (\$1000)}{}
-  {Computer Science Department at CU Boulder}{Oct. 2020}
-  \vspace{.1 mm}
-  
-  Awarded from the Department of Computer Science at CU Boulder to attend the 2021 SIAM Conference on Computational Science and Engineering (CSE21).
-\resumeSubHeadingListEnd
-
-%-----------Teaching Experience-----------------
-\section{Teaching Experience}
-
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {University of Tehran}{Tehran, Iran}
-    {Process Design with HYSYS}{Jan. 2011 - May 2011}
-    \vspace{.1 mm}
-    
-    Teaching assistant for \textbf{Computer Aided Process Design and Simulation with Aspen HYSYS}, a chemical process simulator used to mathematically model chemical processes, at the Chemical Engineering Department.
-
-\resumeSubHeadingListEnd
-
-%-----------Mentoring Experience-----------------
-\section{Mentoring Experience}
-
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-    {Summer Program for Undergraduate Research (SPUR)}{Boulder, CO}
-    {University of Colorado Boulder}{May 2022 - Aug. 2022}
-    \vspace{.1 mm}
-    
-    Kellen Davis Martin (B. Sc. in Aerospace Engineering, University of Colorado Boulder)
-    
-  \resumeSubheading
-    {Summer Program for Undergraduate Research (SPUR)}{Boulder, CO}
-    {University of Colorado Boulder}{Jun. 2021 - Aug. 2021}
-    \vspace{.1 mm}
-    
-    David Reeder (B. Sc. in Mechanical Engineering, University of Colorado Boulder)
-
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
